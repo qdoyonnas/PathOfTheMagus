@@ -1,0 +1,13 @@
+C:\Users\Ivor Darsil\repos\MagusPath\MagusPath\obj\Debug\MagusPath.csprojAssemblyReference.cache
+C:\Users\Ivor Darsil\repos\MagusPath\MagusPath\obj\Debug\MagusPath.Properties.Resources.resources
+C:\Users\Ivor Darsil\repos\MagusPath\MagusPath\obj\Debug\MagusPath.csproj.GenerateResource.cache
+C:\Users\Ivor Darsil\repos\MagusPath\MagusPath\obj\Debug\MagusPath.csproj.CoreCompileInputs.cache
+C:\Users\Ivor Darsil\repos\MagusPath\MagusPath\bin\Debug\MagusPath.exe.config
+C:\Users\Ivor Darsil\repos\MagusPath\MagusPath\bin\Debug\MagusPath.exe
+C:\Users\Ivor Darsil\repos\MagusPath\MagusPath\bin\Debug\MagusPath.pdb
+C:\Users\Ivor Darsil\repos\MagusPath\MagusPath\bin\Debug\WaywardEngine.pdb
+C:\Users\Ivor Darsil\repos\MagusPath\MagusPath\obj\Debug\MagusPath.csproj.CopyComplete
+C:\Users\Ivor Darsil\repos\MagusPath\MagusPath\obj\Debug\MagusPath.exe
+C:\Users\Ivor Darsil\repos\MagusPath\MagusPath\obj\Debug\MagusPath.pdb
+C:\Users\Ivor Darsil\repos\MagusPath\MagusPath\bin\Debug\WaywardEngine.dll
+C:\Users\Ivor Darsil\repos\MagusPath\MagusPath\bin\Debug\WaywardEngine.dll.config

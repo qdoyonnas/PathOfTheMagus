@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2042
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MagusPath", "MagusPath\MagusPath.csproj", "{4DD43FCB-95CF-4813-BF78-9FDA3EF65182}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WaywardEngine", "WaywardEngine\WaywardEngine.csproj", "{49A3F882-BECD-476D-9FC5-FCD0586B965E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4DD43FCB-95CF-4813-BF78-9FDA3EF65182}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4DD43FCB-95CF-4813-BF78-9FDA3EF65182}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4DD43FCB-95CF-4813-BF78-9FDA3EF65182}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4DD43FCB-95CF-4813-BF78-9FDA3EF65182}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49A3F882-BECD-476D-9FC5-FCD0586B965E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49A3F882-BECD-476D-9FC5-FCD0586B965E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49A3F882-BECD-476D-9FC5-FCD0586B965E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49A3F882-BECD-476D-9FC5-FCD0586B965E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A39CF5F3-5CC7-43F7-9DAB-827092B0A76A}
+	EndGlobalSection
+EndGlobal

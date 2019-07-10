@@ -1,0 +1,12 @@
+C:\Users\Ivor Darsil\repos\MagusPath\WaywardEngine\obj\Debug\WaywardEngine.Properties.Resources.resources
+C:\Users\Ivor Darsil\repos\MagusPath\WaywardEngine\obj\Debug\WaywardEngine.csproj.GenerateResource.cache
+C:\Users\Ivor Darsil\repos\MagusPath\WaywardEngine\obj\Debug\WaywardEngine.csproj.CoreCompileInputs.cache
+C:\Users\Ivor Darsil\repos\MagusPath\WaywardEngine\bin\Debug\WaywardEngine.pdb
+C:\Users\Ivor Darsil\repos\MagusPath\WaywardEngine\obj\Debug\WaywardEngine.pdb
+C:\Users\Ivor Darsil\repos\MagusPath\WaywardEngine\bin\Debug\WaywardEngine.dll.config
+C:\Users\Ivor Darsil\repos\MagusPath\WaywardEngine\bin\Debug\WaywardEngine.dll
+C:\Users\Ivor Darsil\repos\MagusPath\WaywardEngine\obj\Debug\WaywardEngine.dll
+C:\Users\Ivor Darsil\repos\MagusPath\WaywardEngine\obj\Debug\WaywardEngine.DescriptivePage.resources
+C:\Users\Ivor Darsil\repos\MagusPath\WaywardEngine\obj\Debug\WaywardEngine.BlankPage.resources
+C:\Users\Ivor Darsil\repos\MagusPath\WaywardEngine\obj\Debug\WaywardEngine.csprojAssemblyReference.cache
+C:\Users\Ivor Darsil\repos\MagusPath\WaywardEngine\obj\Debug\WaywardEngine.ContextRenderer.resources
