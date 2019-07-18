@@ -48,6 +48,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Pages\InputPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pages\InputPage.Designer.cs">
+      <DependentUpon>InputPage.cs</DependentUpon>
+    </Compile>
     <Compile Include="Pages\BlankPage.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -65,10 +71,15 @@
     <Compile Include="Page.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Utility.cs" />
-    <Compile Include="WaywardForm.cs" />
+    <Compile Include="WaywardForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="WaywardForm.Designer.cs">
       <DependentUpon>WaywardForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Pages\InputPage.resx">
+      <DependentUpon>InputPage.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Pages\BlankPage.resx">
       <DependentUpon>BlankPage.cs</DependentUpon>
     </EmbeddedResource>
@@ -103,6 +114,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Resources\BlockyCursor1.png" />
+    <None Include="Resources\Berry Rotunda.ttf" />
     <None Include="Resources\QuillCursor1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

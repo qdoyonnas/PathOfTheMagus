@@ -10,22 +10,6 @@ using System.Windows.Forms;
 
 namespace WaywardEngine
 {
-    public class ContextRenderer : ToolStripProfessionalRenderer
-    {
-        public ContextRenderer() : base(new ColorTheme1()) { }
-    }
-
-    public class ColorTheme1 : ProfessionalColorTable
-    {
-        public override Color MenuItemSelected {
-            get { return Color.Black; }
-        }
-
-        public override Color MenuItemBorder {
-            get { return Color.Silver; }
-        }
-    }
-
     public partial class WaywardForm : Form
     {
         public Game game;
@@ -49,7 +33,7 @@ namespace WaywardEngine
 
         private void newPageToolStripMenuItem_Click( object sender, EventArgs e )
         {
-            AddPage( new Page(this, PageType.Blank) );
+            AddPage( new Page(this, PageType.Input) );
         }
 
         private void quitToolStripMenuItem_Click( object sender, EventArgs e )
@@ -66,4 +50,21 @@ namespace WaywardEngine
             pages.Remove(page);
         }
     }
+
+    public class ContextRenderer : ToolStripProfessionalRenderer
+    {
+        public ContextRenderer() : base(new ColorTheme1()) { }
+    }
+
+    public class ColorTheme1 : ProfessionalColorTable
+    {
+        public override Color MenuItemSelected {
+            get { return Color.Black; }
+        }
+
+        public override Color MenuItemBorder {
+            get { return Color.Silver; }
+        }
+    }
+
 }

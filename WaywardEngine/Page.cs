@@ -10,7 +10,8 @@ namespace WaywardEngine
 {
     public enum PageType {
         Blank,
-        Descriptive
+        Descriptive,
+        Input
     };
 
     public class Page
@@ -29,6 +30,9 @@ namespace WaywardEngine
                     break;
                 case PageType.Descriptive:
                     control = new DescriptivePage(this);
+                    break;
+                case PageType.Input:
+                    control = new InputPage(this);
                     break;
             }
 
@@ -93,6 +97,19 @@ namespace WaywardEngine
             foreach( Control ctrl in allControls ) {
                 if( ctrl.Name == "titleLabel" ) {
                     ctrl.Text = title;
+                }
+            }
+        }
+        public void SetText(string text, bool append)
+        {
+            List<Control> allControls = Utility.GetAllControlsRecurs( new List<Control>(), control );
+            foreach( Control ctrl in allControls ) {
+                if( ctrl.Name == "bodyText" ) {
+                    if( append ) {
+                        ctrl.Text += text;
+                    } else {
+                        ctrl.Text = text;
+                    }
                 }
             }
         }

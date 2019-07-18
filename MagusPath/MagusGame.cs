@@ -16,9 +16,11 @@ namespace MagusPath
             random = new Random();
             mainForm = new WaywardForm(this);
 
+            new GameObject("Room 1");
+            new GameObject("Room 2");
             playerCharacter = new GameObject("You");
-            Page playerPage = new Page(mainForm, PageType.Descriptive);
-            playerPage.SetTitle(playerCharacter.name);
+
+            Page inputPage = new Page(mainForm, PageType.Input);
         }
     }
 }

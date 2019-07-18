@@ -1,6 +1,6 @@
 ﻿namespace WaywardEngine
 {
-    partial class DescriptivePage
+    partial class InputPage
     {
         /// <summary> 
         /// Required designer variable.
@@ -28,45 +28,17 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.titleLabel = new System.Windows.Forms.Label();
-            this.bodyText = new System.Windows.Forms.RichTextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pageContextMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.closeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.bodyText = new System.Windows.Forms.RichTextBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.inputBox = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.pageContextMenu.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // titleLabel
-            // 
-            this.titleLabel.BackColor = System.Drawing.Color.Black;
-            this.titleLabel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.titleLabel.Font = new System.Drawing.Font("Berry Rotunda", 14F);
-            this.titleLabel.Location = new System.Drawing.Point(0, 0);
-            this.titleLabel.Name = "titleLabel";
-            this.titleLabel.Size = new System.Drawing.Size(633, 51);
-            this.titleLabel.TabIndex = 0;
-            this.titleLabel.Text = "label1";
-            this.titleLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // bodyText
-            // 
-            this.bodyText.BackColor = System.Drawing.Color.Black;
-            this.bodyText.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.bodyText.CausesValidation = false;
-            this.bodyText.Cursor = System.Windows.Forms.Cursors.Default;
-            this.bodyText.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.bodyText.ForeColor = System.Drawing.Color.Silver;
-            this.bodyText.Location = new System.Drawing.Point(5, 68);
-            this.bodyText.Name = "bodyText";
-            this.bodyText.ReadOnly = true;
-            this.bodyText.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Vertical;
-            this.bodyText.Size = new System.Drawing.Size(633, 423);
-            this.bodyText.TabIndex = 1;
-            this.bodyText.Text = "Text";
             // 
             // panel1
             // 
@@ -80,7 +52,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Padding = new System.Windows.Forms.Padding(5);
             this.panel1.Size = new System.Drawing.Size(643, 496);
-            this.panel1.TabIndex = 2;
+            this.panel1.TabIndex = 0;
             // 
             // pageContextMenu
             // 
@@ -99,28 +71,58 @@
             this.closeToolStripMenuItem.Name = "closeToolStripMenuItem";
             this.closeToolStripMenuItem.Size = new System.Drawing.Size(104, 30);
             this.closeToolStripMenuItem.Text = "Close";
-            this.closeToolStripMenuItem.Click += new System.EventHandler(this.closeToolStripMenuItem_Click);
+            // 
+            // bodyText
+            // 
+            this.bodyText.BackColor = System.Drawing.Color.Black;
+            this.bodyText.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.bodyText.CausesValidation = false;
+            this.bodyText.ContextMenuStrip = this.pageContextMenu;
+            this.bodyText.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.bodyText.ForeColor = System.Drawing.Color.Silver;
+            this.bodyText.Location = new System.Drawing.Point(5, 5);
+            this.bodyText.Name = "bodyText";
+            this.bodyText.Size = new System.Drawing.Size(633, 433);
+            this.bodyText.TabIndex = 2;
+            this.bodyText.Text = "";
             // 
             // panel3
             // 
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel3.Location = new System.Drawing.Point(5, 58);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel3.Location = new System.Drawing.Point(5, 438);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(633, 10);
+            this.panel3.Size = new System.Drawing.Size(633, 19);
             this.panel3.TabIndex = 3;
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.Gray;
-            this.panel2.Controls.Add(this.titleLabel);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(5, 5);
+            this.panel2.BackColor = System.Drawing.Color.Silver;
+            this.panel2.Controls.Add(this.inputBox);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel2.Location = new System.Drawing.Point(5, 457);
             this.panel2.Name = "panel2";
-            this.panel2.Padding = new System.Windows.Forms.Padding(0, 0, 0, 2);
-            this.panel2.Size = new System.Drawing.Size(633, 53);
-            this.panel2.TabIndex = 2;
+            this.panel2.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
+            this.panel2.Size = new System.Drawing.Size(633, 34);
+            this.panel2.TabIndex = 1;
             // 
-            // DescriptivePage
+            // inputBox
+            // 
+            this.inputBox.BackColor = System.Drawing.Color.Black;
+            this.inputBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.inputBox.CausesValidation = false;
+            this.inputBox.ContextMenuStrip = this.pageContextMenu;
+            this.inputBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.inputBox.Font = new System.Drawing.Font("Berry Rotunda", 11F);
+            this.inputBox.ForeColor = System.Drawing.Color.Silver;
+            this.inputBox.Location = new System.Drawing.Point(0, 2);
+            this.inputBox.Multiline = true;
+            this.inputBox.Name = "inputBox";
+            this.inputBox.Size = new System.Drawing.Size(633, 32);
+            this.inputBox.TabIndex = 0;
+            this.inputBox.Text = "Input";
+            this.inputBox.WordWrap = false;
+            // 
+            // InputPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -129,24 +131,25 @@
             this.Font = new System.Drawing.Font("Berry Rotunda", 8.25F);
             this.ForeColor = System.Drawing.Color.Silver;
             this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "DescriptivePage";
+            this.Name = "InputPage";
             this.Padding = new System.Windows.Forms.Padding(2);
             this.Size = new System.Drawing.Size(647, 500);
             this.panel1.ResumeLayout(false);
             this.pageContextMenu.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Label titleLabel;
-        private System.Windows.Forms.RichTextBox bodyText;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.ContextMenuStrip pageContextMenu;
         private System.Windows.Forms.ToolStripMenuItem closeToolStripMenuItem;
+        private System.Windows.Forms.TextBox inputBox;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.RichTextBox bodyText;
+        private System.Windows.Forms.Panel panel3;
     }
 }
