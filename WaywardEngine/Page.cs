@@ -18,6 +18,9 @@ namespace WaywardEngine
     {
         public WaywardForm form;
 
+        Color initialBorderColor;
+        Color highlightBorderColor = Color.FromArgb(255, 177, 0);
+
         public Control control;
 
         public Page(WaywardForm form, PageType type)
@@ -37,6 +40,8 @@ namespace WaywardEngine
             }
 
             if( control == null ) { return; }
+            initialBorderColor = control.BackColor;
+
             List<Control> allControls = Utility.GetAllControlsRecurs( new List<Control>(), control );
             foreach( Control ctrl in allControls ) {
                 if( !ctrl.CausesValidation ) { continue; }
@@ -52,11 +57,11 @@ namespace WaywardEngine
 
         private void OnMouseEnter( object sender, EventArgs e )
         {
-            control.BackColor = Color.Silver;
+            control.BackColor = highlightBorderColor;
         }
         private void OnMouseLeave( object sender, EventArgs e )
         {
-            control.BackColor = Color.Gray;
+            control.BackColor = initialBorderColor;
         }
         private void OnMouseDown( object sender, MouseEventArgs e )
         {
@@ -68,7 +73,7 @@ namespace WaywardEngine
             form.mouse.ReleaseControl();
         }
 
-        delegate void MoveToDelegate(Point point);
+        delegate void MoveToDelegate( Point point );
         public void MoveTo(Point point)
         {
             if( control.InvokeRequired ) {
@@ -80,7 +85,7 @@ namespace WaywardEngine
             }
         }
 
-        delegate void SetSizeDelegate(Point point);
+        delegate void SetSizeDelegate( Point point );
         public void SetSize(Point size)
         {
             if( control.InvokeRequired ) {
@@ -91,20 +96,20 @@ namespace WaywardEngine
             }
         }
 
-        public void SetTitle(string title)
+        public Control AddControl( Control ctrl )
         {
-            List<Control> allControls = Utility.GetAllControlsRecurs( new List<Control>(), control );
-            foreach( Control ctrl in allControls ) {
-                if( ctrl.Name == "titleLabel" ) {
-                    ctrl.Text = title;
-                }
-            }
+            ctrl.Dock = System.Windows.Forms.DockStyle.Top;
+            control.Controls[0].Controls.Add(ctrl);
+            ctrl.BringToFront();
+
+            return ctrl;
         }
-        public void SetText(string text, bool append)
+
+        public void SetText( string identifier, string text, bool append = false )
         {
             List<Control> allControls = Utility.GetAllControlsRecurs( new List<Control>(), control );
             foreach( Control ctrl in allControls ) {
-                if( ctrl.Name == "bodyText" ) {
+                if( ctrl.Name == identifier ) {
                     if( append ) {
                         ctrl.Text += text;
                     } else {

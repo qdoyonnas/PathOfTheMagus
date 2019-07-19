@@ -24,3 +24,5 @@ C:\Users\ivor9\repos\MagusGame\MagusPath\obj\Debug\MagusPath.Properties.Resource
 C:\Users\ivor9\repos\MagusGame\MagusPath\obj\Debug\MagusPath.csproj.GenerateResource.cache
 C:\Users\ivor9\repos\MagusGame\MagusPath\obj\Debug\MagusPath.csproj.CoreCompileInputs.cache
 C:\Users\ivor9\repos\MagusGame\MagusPath\obj\Debug\MagusPath.csproj.CopyComplete
+C:\Users\Ivor Darsil\repos\MagusPath\MagusPath\obj\Debug\MagusPath.FormControls.Attachable_Data.resources
+C:\Users\Ivor Darsil\repos\MagusPath\MagusPath\obj\Debug\MagusPath.GameObject_data.resources

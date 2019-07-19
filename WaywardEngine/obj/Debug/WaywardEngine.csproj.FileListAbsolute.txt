@@ -9,7 +9,6 @@ C:\Users\Ivor Darsil\repos\MagusPath\WaywardEngine\obj\Debug\WaywardEngine.dll
 C:\Users\Ivor Darsil\repos\MagusPath\WaywardEngine\obj\Debug\WaywardEngine.DescriptivePage.resources
 C:\Users\Ivor Darsil\repos\MagusPath\WaywardEngine\obj\Debug\WaywardEngine.BlankPage.resources
 C:\Users\Ivor Darsil\repos\MagusPath\WaywardEngine\obj\Debug\WaywardEngine.csprojAssemblyReference.cache
-C:\Users\Ivor Darsil\repos\MagusPath\WaywardEngine\obj\Debug\WaywardEngine.ContextRenderer.resources
 C:\Users\ivor9\repos\MagusGame\WaywardEngine\obj\Debug\WaywardEngine.dll
 C:\Users\ivor9\repos\MagusGame\WaywardEngine\obj\Debug\WaywardEngine.pdb
 C:\Users\ivor9\repos\MagusGame\WaywardEngine\bin\Debug\WaywardEngine.dll.config
@@ -23,3 +22,5 @@ C:\Users\ivor9\repos\MagusGame\WaywardEngine\obj\Debug\WaywardEngine.csproj.Gene
 C:\Users\ivor9\repos\MagusGame\WaywardEngine\obj\Debug\WaywardEngine.csproj.CoreCompileInputs.cache
 C:\Users\ivor9\repos\MagusGame\WaywardEngine\obj\Debug\WaywardEngine.InputPage.resources
 C:\Users\ivor9\repos\MagusGame\WaywardEngine\obj\Debug\WaywardEngine.WaywardForm.resources
+C:\Users\Ivor Darsil\repos\MagusPath\WaywardEngine\obj\Debug\WaywardEngine.InputPage.resources
+C:\Users\Ivor Darsil\repos\MagusPath\WaywardEngine\obj\Debug\WaywardEngine.WaywardForm.resources

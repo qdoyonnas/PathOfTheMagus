@@ -31,7 +31,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.pageContextMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.closeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.bodyText = new System.Windows.Forms.RichTextBox();
+            this.BodyText = new System.Windows.Forms.RichTextBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.inputBox = new System.Windows.Forms.TextBox();
@@ -44,7 +44,7 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.Black;
             this.panel1.ContextMenuStrip = this.pageContextMenu;
-            this.panel1.Controls.Add(this.bodyText);
+            this.panel1.Controls.Add(this.BodyText);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -63,28 +63,28 @@
             this.closeToolStripMenuItem});
             this.pageContextMenu.Name = "pageContextMenu";
             this.pageContextMenu.ShowImageMargin = false;
-            this.pageContextMenu.Size = new System.Drawing.Size(105, 34);
+            this.pageContextMenu.Size = new System.Drawing.Size(93, 30);
             // 
             // closeToolStripMenuItem
             // 
             this.closeToolStripMenuItem.ForeColor = System.Drawing.Color.Silver;
             this.closeToolStripMenuItem.Name = "closeToolStripMenuItem";
-            this.closeToolStripMenuItem.Size = new System.Drawing.Size(104, 30);
+            this.closeToolStripMenuItem.Size = new System.Drawing.Size(92, 26);
             this.closeToolStripMenuItem.Text = "Close";
             // 
-            // bodyText
+            // BodyText
             // 
-            this.bodyText.BackColor = System.Drawing.Color.Black;
-            this.bodyText.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.bodyText.CausesValidation = false;
-            this.bodyText.ContextMenuStrip = this.pageContextMenu;
-            this.bodyText.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.bodyText.ForeColor = System.Drawing.Color.Silver;
-            this.bodyText.Location = new System.Drawing.Point(5, 5);
-            this.bodyText.Name = "bodyText";
-            this.bodyText.Size = new System.Drawing.Size(633, 433);
-            this.bodyText.TabIndex = 2;
-            this.bodyText.Text = "";
+            this.BodyText.BackColor = System.Drawing.Color.Black;
+            this.BodyText.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.BodyText.CausesValidation = false;
+            this.BodyText.ContextMenuStrip = this.pageContextMenu;
+            this.BodyText.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.BodyText.ForeColor = System.Drawing.Color.Silver;
+            this.BodyText.Location = new System.Drawing.Point(5, 5);
+            this.BodyText.Name = "BodyText";
+            this.BodyText.Size = new System.Drawing.Size(633, 433);
+            this.BodyText.TabIndex = 2;
+            this.BodyText.Text = "";
             // 
             // panel3
             // 
@@ -107,7 +107,7 @@
             // 
             // inputBox
             // 
-            this.inputBox.BackColor = System.Drawing.Color.Black;
+            this.inputBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(11)))), ((int)(((byte)(11)))));
             this.inputBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.inputBox.CausesValidation = false;
             this.inputBox.ContextMenuStrip = this.pageContextMenu;
@@ -119,14 +119,13 @@
             this.inputBox.Name = "inputBox";
             this.inputBox.Size = new System.Drawing.Size(633, 32);
             this.inputBox.TabIndex = 0;
-            this.inputBox.Text = "Input";
             this.inputBox.WordWrap = false;
             // 
             // InputPage
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 24F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Gray;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(132)))), ((int)(((byte)(0)))));
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Berry Rotunda", 8.25F);
             this.ForeColor = System.Drawing.Color.Silver;
@@ -149,7 +148,7 @@
         private System.Windows.Forms.ToolStripMenuItem closeToolStripMenuItem;
         private System.Windows.Forms.TextBox inputBox;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.RichTextBox bodyText;
+        private System.Windows.Forms.RichTextBox BodyText;
         private System.Windows.Forms.Panel panel3;
     }
 }

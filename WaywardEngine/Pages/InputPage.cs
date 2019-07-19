@@ -35,7 +35,7 @@ namespace WaywardEngine
                 TextBox textBox = sender as TextBox;
                 if( textBox == null ) { return; }
 
-                page.SetText('\r'+textBox.Text, true);
+                page.SetText("BodyText", '\r'+textBox.Text, true);
                 textBox.Text = string.Empty;
             }
         }

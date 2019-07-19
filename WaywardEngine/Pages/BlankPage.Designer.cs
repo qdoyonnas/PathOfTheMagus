@@ -53,21 +53,20 @@
             this.closeToolStripMenuItem});
             this.pageContextMenu.Name = "pageContextMenu";
             this.pageContextMenu.ShowImageMargin = false;
-            this.pageContextMenu.Size = new System.Drawing.Size(156, 52);
+            this.pageContextMenu.Size = new System.Drawing.Size(93, 30);
             // 
             // closeToolStripMenuItem
             // 
             this.closeToolStripMenuItem.ForeColor = System.Drawing.Color.Silver;
             this.closeToolStripMenuItem.Name = "closeToolStripMenuItem";
-            this.closeToolStripMenuItem.Size = new System.Drawing.Size(155, 26);
+            this.closeToolStripMenuItem.Size = new System.Drawing.Size(92, 26);
             this.closeToolStripMenuItem.Text = "Close";
-            this.closeToolStripMenuItem.Click += closeToolStripMenuItem_Click;
             // 
             // BlankPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Gray;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(132)))), ((int)(((byte)(0)))));
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Berry Rotunda", 8.25F);
             this.ForeColor = System.Drawing.Color.Silver;

@@ -9,18 +9,37 @@ namespace MagusPath
 {
     class MagusGame : Game
     {
-        public GameObject playerCharacter;
-
         public MagusGame()
         {
             random = new Random();
             mainForm = new WaywardForm(this);
 
-            new GameObject("Room 1");
-            new GameObject("Room 2");
-            playerCharacter = new GameObject("You");
+            GameManager gm = GameManager.instance;
 
-            Page inputPage = new Page(mainForm, PageType.Input);
+            Container room1 = new Container("Old Room", new Vector3(20f, 20f, 20f));
+            room1.SetWeight(100f);
+
+            Container room2 = new Container("Dark Room", new Vector3(20f, 20f, 20f));
+            room2.SetWeight(100f);
+
+            new LinkedExit("Door", room1, room2);
+
+            Container field = new Container("Field", new Vector3(float.PositiveInfinity, float.PositiveInfinity, float.PositiveInfinity));
+
+            field.Attach(room1);
+            field.Attach(room2);
+
+            new OpenExit("Gate", room2);
+
+            gm.playerCharacter = new Humanoid("You");
+            gm.playerCharacter.SetWeight(9.8f);
+            gm.playerCharacter.dimensions = new Vector3(2f, 6f, 1f);
+
+            room1.Attach(gm.playerCharacter);
+
+            Page describePage = new Page(mainForm, PageType.Descriptive);
+            describePage.SetText( "TitleText", room1.name, false );
+            room1.Describe(describePage, DescribeLevel.data);
         }
     }
 }

@@ -19,6 +19,7 @@ namespace MagusPath
             }
         }
 
+        public GameObject playerCharacter;
         public List<GameObject> gameObjects;
 
         private GameManager()
